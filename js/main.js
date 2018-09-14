@@ -1,15 +1,10 @@
-/* ===================================================================
- * Transcend - Main JS
- *
- * ------------------------------------------------------------------- */
-
 (function($) {
 
     "use strict";
     
     var cfg = {
         scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
+        mailChimpURL   : 'https://github.us19.list-manage.com/subscribe/post?u=e73929d34f5d07d5f6e88576c&amp;id=b0c6bcaabc'   // mailchimp url
     },
 
     $WIN = $(window);
