@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!-- basicos -->
+    <meta charset="utf-8">
+    <title>Deux Amis Lore</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/util.css">
+
+    <!-- script -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- icones -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body id="login">
+    <!-- header -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href>
+                <img src="images/logo3.png" alt="Homepage">
+            </a>
+        </div> <!-- final do logo -->
+
+        <nav class="header-nav">
+            
+            <a href="#0" class="header-nav__close" title="close"><span>Fechar</span></a>
+
+            <div class="header-nav__content">
+                <h3 class="text-shadow">Deux Amis Lore</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">Sobre</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Serviços</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contato</a></li>
+                    <hr>
+                </ul>
+                <ul class="header-loginreg m-t--40 m-b-60">
+                    <li><a class="smoothscroll"  href="#works" title="works">Login</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">Register</a></li>
+                </ul>
+    
+                <p>Um hobby que está se espalhando, uma fantasia que está crescendo, uma aventura que está começando. Tudo aquilo que construimos, que seja dado aos filhos de vosso povo!</p>
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- final do header -->
+
+        </nav> <!-- final do nav -->
+        
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+    </header> <!-- final do s-header -->
+    
+    <!-- home -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/heroic-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+
+        <div class="shadow-overlay">
+            <div class="home-content">
+                <div class="home-content__main" style="text-align:center">
+                    <form id="formulario" action="registro.php" method="post">
+
+                        <label for="usuario">Seu usuario</label><br />
+                        <input type="text" name="usuario" id="usuario" />
+
+                        <label for="senha">Sua senha</label><br />
+                        <input type="password" name="senha" id="password" />
+
+                        <label for="repetirSenha">Repetir senha</label><br />
+                        <input type="password" name="repetirSenha" id="passwordRepeat" />
+
+                        <label for="email">Seu e-mail</label><br />
+                        <input type="email" name="email" id="email" />
+
+                        <button type="submit" name="envia_dados">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div> <!-- end home-content -->
+    </section>
+</body>
