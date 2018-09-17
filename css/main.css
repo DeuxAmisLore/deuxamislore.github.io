@@ -944,10 +944,10 @@ input::-moz-focus-inner {
  * markup:
  *
  * <aside class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- *	</aside>
+ *    <blockquote>
+ *      <p></p>
+ *    </blockquote>
+ *  </aside>
  *
  * --------------------------------------------------------------------- */
 .pull-quote {
@@ -985,8 +985,8 @@ input::-moz-focus-inner {
  * markup:
  *
  * <ul class="stats-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
+ *    <li><a href="#">[value]<em>[name]</em></a></li>
+ *  </ul>
  *
  * Extend this object into your markup.
  *
@@ -2907,7 +2907,7 @@ html.no-csstransitions .home-content__main {
   margin-top: 1.8rem;
   position: relative;
 }
-
+  
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -2977,6 +2977,7 @@ html.no-csstransitions .home-content__main {
   padding-top: 3.6rem;
   position: relative;
 }
+
 .contact-email::before {
   content: "";
   display: block;
