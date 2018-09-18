@@ -2848,7 +2848,6 @@ html.no-csstransitions .home-content__main {
   padding-top: 4.2rem;
   padding-bottom: 4.2rem;
   background-color: #050505;
-  background-image: url(../images/stats-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3395,20 +3394,10 @@ html.no-csstransitions .home-content__main {
 
 .login-input{
   width: 100%;
-  /*margin-left: 25%;*/
-  /*margin-right: 25%;*/
+  /*margin-left: 25%;
+  margin-right: 25%;*/
   border-radius: 5px;
   height: 5%;
-}
-
-.ls-login-user label, .ls-login-password label{
-  font-size: 2rem;
-  font-family: "metropolis-semibold", sans-serif;
-  color: #000000;
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  text-align: center;
 }
 
 .login-button{
@@ -3434,10 +3423,11 @@ html.no-csstransitions .home-content__main {
 }
 
 .login-info h2{
-  color: rgba(255,250,250,1);
+  color: rgba(255,250,250,0.8);
   font-size: 3em;
   text-align: justify;
 }
 
-/*# sourceMappingURL=main.css.map */
-
+.ls-login-user label,.ls-login-password label{
+  font-size: 2rem;
+}
