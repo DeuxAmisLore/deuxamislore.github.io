@@ -2848,6 +2848,7 @@ html.no-csstransitions .home-content__main {
   padding-top: 4.2rem;
   padding-bottom: 4.2rem;
   background-color: #050505;
+  background-image: url(../images/stats-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3385,6 +3386,10 @@ html.no-csstransitions .home-content__main {
   text-shadow: 2px 2px 5px #fff7dd;
 }
 
+.box-shadow{
+  box-shadow: 2px 2px 5px grey;
+}
+
 .login-bg{
   position: relative;
   background-color: rgba(255,250,250,0.7);
@@ -3394,17 +3399,27 @@ html.no-csstransitions .home-content__main {
 
 .login-input{
   width: 100%;
-  /*margin-left: 25%;
-  margin-right: 25%;*/
+  /*margin-left: 25%;*/
+  /*margin-right: 25%;*/
   border-radius: 5px;
   height: 5%;
+}
+
+.ls-login-user label, .ls-login-password label{
+  font-size: 2rem;
+  font-family: "metropolis-semibold", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  text-align: center;
 }
 
 .login-button{
   margin-left: 35%;
   margin-right:35%;
   width: 30%;
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: rgba(255,250,250,0.8);
 }
 
@@ -3423,11 +3438,27 @@ html.no-csstransitions .home-content__main {
 }
 
 .login-info h2{
-  color: rgba(255,250,250,0.8);
+  color: rgba(255,250,250,1);
   font-size: 3em;
   text-align: justify;
 }
 
-.ls-login-user label,.ls-login-password label{
-  font-size: 2rem;
+.download-grid{
+  display: grid;
+  grid-column:;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  /*background-color: #2196F3;*/
+  box-shadow: 4px 4px 10px grey;
+  padding: 10px;
 }
+
+.download-grid>center {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding:20px 0;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */
+
