@@ -3390,15 +3390,25 @@ html.no-csstransitions .home-content__main {
   position: relative;
   background-color: rgba(255,250,250,0.7);
   border-radius: 5px;
-  width: 100%;
+  width: 50%;
 }
 
 .login-input{
-  width: 80%;
-  margin-left: 25%;
-  margin-right: 25%;
-  border-radius: 20px;
-  height: 5px;
+  width: 100%;
+  /*margin-left: 25%;*/
+  /*margin-right: 25%;*/
+  border-radius: 5px;
+  height: 5%;
+}
+
+.ls-login-user label, .ls-login-password label{
+  font-size: 2rem;
+  font-family: "metropolis-semibold", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  text-align: center;
 }
 
 .login-button{
@@ -3424,7 +3434,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .login-info h2{
-  color: rgba(255,250,250,0.8);
+  color: rgba(255,250,250,1);
   font-size: 3em;
   text-align: justify;
 }
