@@ -3443,6 +3443,8 @@ html.no-csstransitions .home-content__main {
   text-align: justify;
 }
 
+@media only screen and (min-width: 1000px) {
+
 .download-grid{
   display: grid;
   grid-column:;
@@ -3490,10 +3492,65 @@ html.no-csstransitions .home-content__main {
   display:none;
 }
 
+.download-grid img{
+    height:250px;
+    width: 200px;
+}
+
+.download-grid-35 img{
+    height:250px;
+    width: 200px;
+}
+
+.download-grid p, .download-grid h1{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.download-grid-35 p, .download-grid-35 h1{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.download-center{
+  border-left: groove;
+  /*border-right: groove;*/
+  border-width:5px;
+  background-color: #eacece;
+  border-color: red;
+}
+
+.download-center-35{
+  border-left: groove;
+  /*border-right: groove;*/
+  border-width:5px;
+  background-color: #b7d2ff;
+  border-color: #4286f4;
+}
+
+.btnDownload{
+  float:right;
+  position: absolute;
+  top: 1px;
+  right: -2px;
+  height:42.57px;
+}
+
+  .hide{
+    display:none;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .btnDownload{
-    position: relative;
-    top: 46.57px;
+    display:block;
+    position: absolute;
+    display: block;
+    top: 1px;
     right: -2px;
     height:42.57px;
     width:100%;
@@ -3555,12 +3612,10 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 600px) {
 
   .btnDownload{
-    position: relative;
-    top: 1px;
-    right: -2px;
-    height:42.57px;
-    width:100%;
+    display:none;
   }
+
+  .hide{}
 
   .download-grid{
     display: grid;
@@ -3602,57 +3657,27 @@ html.no-csstransitions .home-content__main {
   .desktop{
     display:none;
   }
+
   .download-grid img{
-    height:15em;
+    height:250px;
+    width: 200px;
   }
+
+  .download-grid-35 img{
+    height:250px;
+    width: 200px;
+  }
+
   .download-grid p{
+    display: none;
+  }
+
+  .download-grid-35 p{
     display: none;
   }
 }
 
-.download-grid p, .download-grid h1{
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
 
-.download-center{
-  border-left: groove;
-  /*border-right: groove;*/
-  border-width:5px;
-  background-color: #eacece;
-  border-color: red;
-}
-
-.download-center-35{
-  border-left: groove;
-  /*border-right: groove;*/
-  border-width:5px;
-  background-color: #b7d2ff;
-  border-color: #4286f4;
-}
-
-
-.download-grid img{
-    height:475px;
-    width: 360px;
-}
-
-.dnd35{
-
-}
 
 /*# sourceMappingURL=main.css.map */
 
-.btnDownload{
-  float:right;
-  position: absolute;
-  top: 1px;
-  right: -2px;
-  height:42.57px;
-}
-
-.hide{
-  display:none;
-}
