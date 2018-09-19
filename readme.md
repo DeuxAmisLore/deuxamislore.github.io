@@ -11,8 +11,6 @@
 ### Estamos criando novas possibilidades para o universo RPG.
 
 *
-![Author image](images/avatars/user-01.jpg)
-*
 “ Espera... só um segundo... deixa eu checar uma coisa aqui... **CARALHO MANO ISSO É MUITO DANO* ”*
 
 Atual desenvolvedor full stack deste projeto, estamos em busca de novos ares e de proporcionar a vocês, jogadores de RPG, uma nova experiência quanto ao antigo cenário. Tecnologia em quantidade correta pode ser muito bem usufruida!
@@ -20,8 +18,6 @@ Atual desenvolvedor full stack deste projeto, estamos em busca de novos ares e d
 Matheus Fiorin
 Full stack developer
 
-*
-![Author image](images/avatars/user-05.jpg)
 *
 " aquela frase top "
 
