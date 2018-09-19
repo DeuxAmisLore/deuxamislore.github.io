@@ -3491,6 +3491,22 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 1000px) {
+  .btnDownload{
+    position: relative;
+    top: 46.57px;
+    right: -2px;
+    height:42.57px;
+    width:100%;
+  }
+
+  .dnd5e::after{
+    content:' - Dungeons and Dragons 5e';
+  }
+
+  .dnd35e::after{
+    content:' - Dungeons and Dragons 3.5e';
+  }
+
   .download-grid{
     display: grid;
     grid-column:;
@@ -3537,6 +3553,15 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 600px) {
+
+  .btnDownload{
+    position: relative;
+    top: 1px;
+    right: -2px;
+    height:42.57px;
+    width:100%;
+  }
+
   .download-grid{
     display: grid;
     grid-column:;
