@@ -306,10 +306,11 @@
 
         <div class="row download-wrap">
             <div class="downloads">
-                <div class="download-center" data-aos="fade-up">
+                <div class="download-center" data-aos="fade-down">
                     <center><h1> Dungeons And Dragons 5ed. </h1></center>
+                    <button class="btnDownload" onclick="mostrarDnd5()">Expandir</button>
                 </div>
-                <div class="download-grid" data-aos="fade-up">
+                <div class="download-grid hide" id="dnd5" data-aos="fade-up" data-aos-onde="false">
                     <center>
                         <a href="https://github.com/DeuxAmisLore/deuxamislore.github.io/raw/master/livros/LDJ.pdf" target="_blank" title="Livro do Jogador" data-size="1000x700">
                             <img src="images/livros/livroDoJogador5.jpg" alt="Livro do Jogador" class="download-img">
@@ -366,11 +367,12 @@
                     </center>
                 </div>
 
-                <div class="download-center-35" data-aos="fade-up">
+                <div class="download-center-35" data-aos="fade-down">
                     <center><h1> Dungeons And Dragons 3.5ed. </h1></center>
+                    <button class="btnDownload" onclick="mostrarDnd35()">Expandir</button>
                 </div>
 
-                <div class="download-grid-35" data-aos="fade-up">
+                <div class="download-grid-35 hide" id="dnd35" data-aos="fade-up">
                     <center>
                         <a href="https://github.com/DeuxAmisLore/deuxamislore.github.io/raw/master/livros/LDJ3.pdf" target="_blank" title="Livro do Jogador" data-size="1000x700">
                             <img src="images/livros/livroDoJogador3-5.jpg" alt="Livro do Jogador" class="download-img">
@@ -597,6 +599,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        var mostrarDnd5 = function(){
+            var aux = document.getElementById('dnd5')
+            aux.classList.toggle("hide")
+        }
+
+        var mostrarDnd35 = function(){
+            var auxy = document.getElementById('dnd35')
+            auxy.classList.toggle("hide")
+        }
+    </script>
 
 </body>
 

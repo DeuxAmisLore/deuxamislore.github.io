@@ -3581,3 +3581,14 @@ html.no-csstransitions .home-content__main {
 
 /*# sourceMappingURL=main.css.map */
 
+.btnDownload{
+  float:right;
+  position: absolute;
+  top: 1px;
+  right: -2px;
+  height:42.57px;
+}
+
+.hide{
+  display:none;
+}
