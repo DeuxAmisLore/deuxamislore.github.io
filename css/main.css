@@ -2778,6 +2778,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .testimonials__author {
+  vertical-align: bottom;
   margin-top: 0rem;
   font-family: "metropolis-bold", sans-serif;
   font-size: 1.8rem;
@@ -3681,3 +3682,6 @@ html.no-csstransitions .home-content__main {
 
 /*# sourceMappingURL=main.css.map */
 
+.v-b{
+  vertical-align: bottom;
+}
