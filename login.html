@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/login.css">
 
     <!-- script -->
     <script src="js/modernizr.js"></script>
@@ -31,7 +32,7 @@
 
         <div class="header-logo">
             <a class="site-logo" href>
-                <img src="images/logo3.png" alt="Homepage">
+                <img src="images/logo.png" alt="Homepage">
             </a>
         </div> <!-- final do logo -->
 
@@ -84,41 +85,48 @@
     <div class="shadow-overlay"></div>
         <div class="login-wrap">
             <div class="login-html">
-                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
-                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Entrar</label>
+                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrar</label>
                 <div class="login-form">
                     <div class="sign-in-htm">
                         <div class="group">
-                            <label for="user" class="label">Username</label>
+                            <label for="user" class="label">Usuario</label>
                             <input id="user" type="text" class="input">
                         </div>
                         <div class="group">
-                            <label for="pass" class="label">Password</label>
+                            <label for="pass" class="label">Senha</label>
                             <input id="pass" type="password" class="input" data-type="password">
                         </div>
                         <div class="group">
                             <input id="check" type="checkbox" class="check" checked>
-                            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                            <label for="check"><span class="icon"></span> Mantenha-me conectado</label>
                         </div>
                         <div class="group">
                             <input type="submit" class="button" value="Sign In">
                         </div>
                         <div class="hr"></div>
                         <div class="foot-lnk">
-                            <a href="#forgot">Forgot Password?</a>
+                            <a href="#forgot">Esqueceu a Senha?</a>
                         </div>
                     </div>
                     <div class="sign-up-htm">
                         <div class="group">
-                            <label for="user" class="label">Username</label>
+                            <label for="user" class="label">Usuario</label>
                             <input id="user" type="text" class="input">
                         </div>
                         <div class="group">
-                            <label for="pass" class="label">Password</label>
+                            <label for="pass" class="label">Senha</label>
                             <input id="pass" type="password" class="input" data-type="password">
+                            <!-- <div class="password_strength_meter" id="password_strength_meter">
+                                    <strong class="l5"></strong>
+                                    <strong class="l4 l5"></strong>
+                                    <strong class="l3 l4 l5"></strong>
+                                    <strong class="l2 l3 l4 l5"></strong>
+                                    <strong class="l1 l2 l3 l4 l5"></strong>
+                            </div> -->
                         </div>
                         <div class="group">
-                            <label for="pass" class="label">Repeat Password</label>
+                            <label for="pass" class="label">Repita a Senha</label>
                             <input id="pass" type="password" class="input" data-type="password">
                         </div>
                         <div class="group">
@@ -130,22 +138,12 @@
                         </div>
                         <div class="hr"></div>
                         <div class="foot-lnk">
-                            <label for="tab-1">Already Member?</a>
+                            <label for="tab-1">Ja é um Membro?</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <ul class="home-sidelinks">
-            <li><a class="smoothscroll" href="#about">Sobre<span>quem nós somos</span></a></li>
-            <li><a class="smoothscroll" href="#services">Serviços<span>o que fazemos</span></a></li>
-            <li><a class="smoothscroll" href="#downloads">Downloads<span>baixe livros</span></a></li>
-            <li><a  class="smoothscroll" href="#contact">Contato<span>fale conosco</span></a></li>
-        </ul>
-        <a href="#stats" class="home-scroll smoothscroll">
-            <span class="home-scroll__text">Rola ai!</span>
-            <span class="home-scroll__icon"></span>
-        </a> <!-- end home-scroll -->
     </section>
 
     <section id="stats" class="s-stats">
@@ -172,80 +170,6 @@
         </div> <!-- end stats -->
 
     </section> <!-- end s-stats -->
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact">
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead subhead--light">Entre em contato!</h3>
-                <h1 class="display-1 display-1--light">Fale conosco para crescer ainda mais a comunidade! Estamos abertos à qualquer sugestão, dúvida ou reclamação!</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row">
-
-            <div class="col-full contact-main" data-aos="fade-up">
-                <p>
-                <a href="mailto:#0" class="contact-email">DeuxAmisLore@gmail.com</a>
-                <span class="contact-number">+55 (16) 99417-8449  /  +55 (16) 99701-2645</span>
-                </p>
-            </div> <!-- end contact-main -->
-
-        </div> <!-- end row -->
-
-        <div class="row">
-
-            <div class="col-five tab-full contact-secondary" data-aos="fade-up">
-                <h3 class="subhead subhead--light">Onde Nos Achar</h3>
-
-                <p class="contact-address">
-                    (local ainda não definido)<br>
-                    Monte Alto, SP<br>
-                    15910-000 BR
-                </p>
-            </div> <!-- end contact-secondary -->
-
-            <div class="col-five tab-full contact-secondary" data-aos="fade-up">
-                <h3 class="subhead subhead--light">Siga as Redes Sociais</h3>
-
-                <ul class="contact-social">
-                    <li>
-                        <a href="#0"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-instagram"></i></a>
-                    </li>
-                </ul> <!-- end contact-social -->
-
-                <div class="contact-subscribe">
-                    <form id="mc-form" class="group mc-form" novalidate="true">
-                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Endereço de Email" required="">
-                        <input type="submit" name="subscribe" value="Inscrever" class="recolor666">
-                        <label for="mc-email" class="subscribe-message"></label>
-                    </form>
-                </div> <!-- end contact-subscribe -->
-            </div> <!-- end contact-secondary -->
-
-        </div> <!-- end row -->
-
-        <div class="row">
-            <div class="col-full cl-copyright">
-                <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Nosso site feito com <i class="fa fa-heart" aria-hidden="true"></i> por <a href target="_blank">DeuxAmis!</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span> 
-            </div>
-        </div>
-
-        <div class="cl-go-top">
-            <a class="smoothscroll" title="Voltar ao Topo" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
-        </div>
-
-    </section> <!-- end s-contact -->
 
     <!-- Preloader -->
     <div id="preloader">
