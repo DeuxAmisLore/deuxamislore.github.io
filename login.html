@@ -44,16 +44,12 @@
                 <h3 class="text-shadow">Deux Amis Lore</h3>
                 
                 <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#home" title="home">Home</a></li>
                     <li><a class="smoothscroll"  href="#about" title="about">Sobre</a></li>
                     <li><a class="smoothscroll"  href="#services" title="services">Serviços</a></li>
                     <li><a class="smoothscroll"  href="#downloads" title="downloads">Downloads</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contato</a></li>
-                    <hr>
-                </ul>
-                <ul class="header-loginreg m-t--40 m-b-60">
-                    <li><a class="smoothscroll text-shadow fs-18"  href="#works" title="works">Login</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="works">Register</a></li>
+                    <li class="current"><a class="smoothscroll"  href title="login">Login/Registro</a></li>
                 </ul>
     
                 <p>Um hobby que está se espalhando, uma fantasia que está crescendo, uma aventura que está começando. Tudo aquilo que construimos, que seja dado aos filhos de vosso povo!</p>
@@ -80,7 +76,7 @@
     </header> <!-- final do s-header -->
     
     <!-- login -->
-    <section id="top" class="s-home target-section" data-parallax="scroll" data-image-src="images/loginreg-bg.png" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+    <section id="top" class="s-home target-section" data-parallax="scroll" data-image-src="images/loginreg-bg.png">
 
     <div class="shadow-overlay"></div>
         <div class="login-wrap">
@@ -102,11 +98,11 @@
                             <label for="check"><span class="icon"></span> Mantenha-me conectado</label>
                         </div>
                         <div class="group">
-                            <input type="submit" class="button" value="Sign In">
+                            <input type="submit" class="button" value="Entrar">
                         </div>
                         <div class="hr"></div>
                         <div class="foot-lnk">
-                            <a href="#forgot">Esqueceu a Senha?</a>
+                            <label><a href="#forgot">Esqueceu a Senha?</a></label>
                         </div>
                     </div>
                     <div class="sign-up-htm">
@@ -134,7 +130,7 @@
                             <input id="pass" type="text" class="input">
                         </div>
                         <div class="group">
-                            <input type="submit" class="button" value="Sign Up">
+                            <input type="submit" class="button" value="Registrar">
                         </div>
                         <div class="hr"></div>
                         <div class="foot-lnk">
@@ -144,32 +140,82 @@
                 </div>
             </div>
         </div>
+        <div class="r-b-c">
+            <img src="images/gif/4horseman.gif">
+        </div>
     </section>
 
-    <section id="stats" class="s-stats">
+    <section id="contact" class="s-contact">
 
-        <div class="row stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-                
-            <div class="col-block stats__col ">
-                <div class="stats__count">129</div>
-                <h5>Horas de trabalho</h5>
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--light">Entre em contato!</h3>
+                <h1 class="display-1 display-1--light">Fale conosco para crescer ainda mais a comunidade! Estamos abertos à qualquer sugestão, dúvida ou reclamação!</h1>
             </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">1507</div>
-                <h5>Copos de café</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">108</div>
-                <h5>Projetos compilados</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">103</div>
-                <h5>Usuários Felizes</h5> 
-            </div>
+        </div> <!-- end section-header -->
 
-        </div> <!-- end stats -->
+        <div class="row">
 
-    </section> <!-- end s-stats -->
+            <div class="col-full contact-main" data-aos="fade-up">
+                <p>
+                <a href="mailto:#0" class="contact-email">DeuxAmisLore@gmail.com</a>
+                <span class="contact-number">+55 (16) 99417-8449  /  +55 (16) 99701-2645</span>
+                </p>
+            </div> <!-- end contact-main -->
+
+        </div> <!-- end row -->
+
+        <div class="row">
+
+            <div class="col-five tab-full contact-secondary" data-aos="fade-up">
+                <h3 class="subhead subhead--light">Onde Nos Achar</h3>
+
+                <p class="contact-address">
+                    (local ainda não definido)<br>
+                    Monte Alto, SP<br>
+                    15910-000 BR
+                </p>
+            </div> <!-- end contact-secondary -->
+
+            <div class="col-five tab-full contact-secondary" data-aos="fade-up">
+                <h3 class="subhead subhead--light">Siga as Redes Sociais</h3>
+
+                <ul class="contact-social">
+                    <li>
+                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul> <!-- end contact-social -->
+
+                <div class="contact-subscribe">
+                    <form id="mc-form" class="group mc-form" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Endereço de Email" required="">
+                        <input type="submit" name="subscribe" value="Inscrever" class="recolor666">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                </div> <!-- end contact-subscribe -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end row -->
+
+        <div class="row">
+            <div class="col-full cl-copyright">
+                <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Nosso site feito com <i class="fa fa-heart" aria-hidden="true"></i> por <a href target="_blank">DeuxAmis!</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span> 
+            </div>
+        </div>
+
+        <div class="cl-go-top">
+            <a class="smoothscroll" title="Voltar ao Topo" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+        </div>
+
+    </section> <!-- end s-contact -->
 
     <!-- Preloader -->
     <div id="preloader">
@@ -181,5 +227,5 @@
     <!-- Java Script -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
 </body>

@@ -5,21 +5,60 @@
 .clearfix:after{clear:both;display:block}
 a{color:inherit;text-decoration:none}
 
-.login-wrap{
-	width:100%;
-	margin:auto;
-	max-width:525px;
-	min-height:670px;
-	position: absolute;
-	background:url(https://github.com/DeuxAmisLore/deuxamislore.github.io/blob/master/images/stats-bg.png) no-repeat center;
-	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+.centered{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
-.login-html{
-	width:100%;
-	height:100%;
-	position:absolute;
-	padding:90px 70px 900px 70px;
-	background:#3e2b47;
+
+.r-b-c{
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	filter: drop-shadow(0 0 0.75rem crimson) contrast(1.3);
+}
+
+@media screen and (max-width: 1000px){
+	.r-b-c{
+		display: none;
+	}
+	.login-wrap{
+		width:100%;
+		height:100%;
+		margin:auto;
+		position: relative;
+		/*background:url(https://github.com/DeuxAmisLore/deuxamislore.github.io/blob/master/images/stats-bg.png) no-repeat center;*/
+		/*box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19); ISSO ERA PRA SER NO .login-html */
+	}
+	.login-html{
+		width:100%;
+		height:100%;
+		/*position:absolute;*/
+		padding:90px 70px 900px 70px;
+		background:rgba(62, 43, 71, 0.6);
+		box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.login-wrap{
+		width:100%;
+		margin:auto;
+		max-width:525px;
+		min-height:670px;
+		position: absolute;
+		/*background:url(https://github.com/DeuxAmisLore/deuxamislore.github.io/blob/master/images/stats-bg.png) no-repeat center;*/
+		/*box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19); ISSO ERA PRA SER NO .login-html */
+	}
+	.login-html{
+		width:100%;
+		height:100%;
+		position:absolute;
+		padding:90px 70px 900px 70px;
+		background:rgba(62, 43, 71, 0.6);
+		box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	}
 }
 .login-html .sign-in-htm,
 .login-html .sign-up-htm{
