@@ -1,223 +1,276 @@
 /* --- Area do teste de login e regitro ---*/
 
-*,:after,:before{box-sizing:border-box}
-.clearfix:after,.clearfix:before{content:'';display:table}
-.clearfix:after{clear:both;display:block}
-a{color:inherit;text-decoration:none}
+*,
+:after,
+:before {
+	box-sizing: border-box
+}
 
-.centered{
+.clearfix:after,
+.clearfix:before {
+	content: '';
+	display: table
+}
+
+.clearfix:after {
+	clear: both;
+	display: block
+}
+
+a {
+	color: inherit;
+	text-decoration: none
+}
+
+.centered {
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
-.r-b-c{
+.r-b-c {
 	position: fixed;
 	right: 0px;
 	bottom: 0px;
 	filter: drop-shadow(0 0 0.75rem #825896) contrast(1.3);
 }
 
-@media screen and (max-width: 1000px){
-	.r-b-c{
+@media screen and (max-width: 1000px) {
+	.r-b-c {
 		display: none;
 	}
-	.login-wrap{
-		width:100%;
-		height:100%;
-		margin:auto;
+	.login-wrap {
+		width: 100%;
+		height: 100%;
+		margin: auto;
 		position: relative;
 		/*background:url(https://github.com/DeuxAmisLore/deuxamislore.github.io/blob/master/images/stats-bg.png) no-repeat center;*/
 		/*box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19); ISSO ERA PRA SER NO .login-html */
 	}
-	.login-html{
-		width:100%;
-		height:100%;
+	.login-html {
+		width: 100%;
+		height: 100%;
 		/*position:absolute;*/
-		padding:90px 70px 900px 70px;
-		background:rgba(62, 43, 71, 0.6);
-		box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+		padding: 90px 70px 900px 70px;
+		background: rgba(62, 43, 71, 0.6);
+		box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
 	}
 }
 
-@media screen and (min-width: 1000px){
-	.login-wrap{
-		width:100%;
-		margin:auto;
-		max-width:525px;
-		min-height:670px;
+@media screen and (min-width: 1000px) {
+	.login-wrap {
+		width: 100%;
+		margin: auto;
+		max-width: 525px;
+		min-height: 670px;
 		position: absolute;
 		/*background:url(https://github.com/DeuxAmisLore/deuxamislore.github.io/blob/master/images/stats-bg.png) no-repeat center;*/
 		/*box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19); ISSO ERA PRA SER NO .login-html */
 	}
-	.login-html{
-		width:100%;
-		height:100%;
-		position:absolute;
-		padding:90px 70px 900px 70px;
-		background:rgba(62, 43, 71, 0.6);
-		box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	.login-html {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		padding: 90px 70px 900px 70px;
+		background: rgba(62, 43, 71, 0.6);
+		box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
 	}
 }
+
 .login-html .sign-in-htm,
-.login-html .sign-up-htm{
-	top:5px;
-	left:0;
-	right:0;
-	bottom:0;
-	position:absolute;
-	transform:rotateY(180deg);
-	backface-visibility:hidden;
-	transition:all .4s linear;
+.login-html .sign-up-htm {
+	top: 5px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	transition: all .4s linear;
 }
+
 .login-html .sign-in,
 .login-html .sign-up,
-.login-form .group .check{
-	display:none;
+.login-form .group .check {
+	display: none;
 }
+
 .login-html .tab,
 .login-form .group .label,
-.login-form .group .button{
-	text-transform:uppercase;
+.login-form .group .button {
+	text-transform: uppercase;
 }
-.login-html .tab{
-  font-size:22px;
-  margin: 4px;
-	display:inline-block;
-	border-bottom:2px solid transparent;
+
+.login-html .tab {
+	font-size: 22px;
+	margin: 4px;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
 }
-.login-html .sign-in:checked + .tab,
-.login-html .sign-up:checked + .tab{
-	color:#fff;
-	border-color:#6d527c;
+
+.login-html .sign-in:checked+.tab,
+.login-html .sign-up:checked+.tab {
+	color: #fff;
+	border-color: #6d527c;
 }
-.login-form{
-	min-height:345px;
-	position:relative;
-	perspective:1000px;
-	transform-style:preserve-3d;
+
+.login-form {
+	min-height: 345px;
+	position: relative;
+	perspective: 1000px;
+	transform-style: preserve-3d;
 }
-.login-form .group{
-}
+
+.login-form .group {}
+
 .login-form .group .label,
 .login-form .group .input,
-.login-form .group .button{
-	width:100%;
-	color:#fff;
-	display:block;
-}
-.login-form .group .input,{
-    width: 100%;
-    padding: 11px 10px 11px 13px;
-    display: block;
-    margin: 0;
-    border: none;
-    background: none;
-    box-sizing: border-box;
-}
-.login-form .group .button{
-	border:none;
-	border-radius:25px;
-	background:rgba(255,255,255,.1);
-}
-.login-form .group input[data-type="password"]{
-	text-security:circle;
-	-webkit-text-security:circle;
-}
-.login-form .group .label{
-	color:#aaa;
-	font-size:12px;
-}
-.login-form .group .button{
-	background:#6d527c;
-}
-.login-form .group label .icon{
-	width:15px;
-	height:15px;
-	border-radius:2px;
-	position:relative;
-	display:inline-block;
-	background:rgba(255,255,255,.1);
-}
-.login-form .group label .icon:before,
-.login-form .group label .icon:after{
-	content:'';
-	width:10px;
-	height:2px;
-	background:#fff;
-	position:absolute;
-	transition:all .2s ease-in-out 0s;
-}
-.login-form .group label .icon:before{
-	left:3px;
-	width:5px;
-	bottom:6px;
-	transform:scale(0) rotate(0);
-}
-.login-form .group label .icon:after{
-	top:6px;
-	right:0;
-	transform:scale(0) rotate(0);
-}
-.login-form .group .check:checked + label{
-	color:#fff;
-}
-.login-form .group .check:checked + label .icon{
-	background:#6d527c;
-}
-.login-form .group .check:checked + label .icon:before{
-	transform:scale(1) rotate(45deg);
-}
-.login-form .group .check:checked + label .icon:after{
-	transform:scale(1) rotate(-45deg);
-}
-.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
-	transform:rotate(0);
-}
-.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
-	transform:rotate(0);
+.login-form .group .button {
+	width: 100%;
+	color: #fff;
+	display: block;
 }
 
-.hr{
-	height:2px;
-	background:rgba(255,255,255,.2);
+.login-form .group .input,
+{
+	width: 100%;
+	padding: 11px 10px 11px 13px;
+	display: block;
+	margin: 0;
+	border: none;
+	background: none;
+	box-sizing: border-box;
 }
-.foot-lnk{
-    text-align:center;
-    color: whitesmoke;
+
+.login-form .group .button {
+	border: none;
+	border-radius: 25px;
+	background: rgba(255, 255, 255, .1);
 }
+
+.login-form .group input[data-type="password"] {
+	text-security: circle;
+	-webkit-text-security: circle;
+}
+
+.login-form .group .label {
+	color: #aaa;
+	font-size: 12px;
+}
+
+.login-form .group .button {
+	background: #6d527c;
+}
+
+.login-form .group label .icon {
+	width: 15px;
+	height: 15px;
+	border-radius: 2px;
+	position: relative;
+	display: inline-block;
+	background: rgba(255, 255, 255, .1);
+}
+
+.login-form .group label .icon:before,
+.login-form .group label .icon:after {
+	content: '';
+	width: 10px;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	transition: all .2s ease-in-out 0s;
+}
+
+.login-form .group label .icon:before {
+	left: 3px;
+	width: 5px;
+	bottom: 6px;
+	transform: scale(0) rotate(0);
+}
+
+.login-form .group label .icon:after {
+	top: 6px;
+	right: 0;
+	transform: scale(0) rotate(0);
+}
+
+.login-form .group .check:checked+label {
+	color: #fff;
+}
+
+.login-form .group .check:checked+label .icon {
+	background: #6d527c;
+}
+
+.login-form .group .check:checked+label .icon:before {
+	transform: scale(1) rotate(45deg);
+}
+
+.login-form .group .check:checked+label .icon:after {
+	transform: scale(1) rotate(-45deg);
+}
+
+.login-html .sign-in:checked+.tab+.sign-up+.tab+.login-form .sign-in-htm {
+	transform: rotate(0);
+}
+
+.login-html .sign-up:checked+.tab+.login-form .sign-up-htm {
+	transform: rotate(0);
+}
+
+.hr {
+	height: 2px;
+	background: rgba(255, 255, 255, .2);
+}
+
+.foot-lnk {
+	text-align: center;
+	color: whitesmoke;
+}
+
 
 /*--- Strong Meter --- */
+
 .password_strength_meter {
-    width:8px;
-    display:block
+	width: 8px;
+	display: block
 }
+
 .password_strength_meter.inactive {
-    display:none
+	display: none
 }
+
 .password_strength_meter strong {
-    display:block;
-    overflow:hidden;
-    height:2px;
-    margin-bottom:2px;
-    font-size:0;
-    background:rgba(0,0,0,0.14)
+	display: block;
+	overflow: hidden;
+	height: 2px;
+	margin-bottom: 2px;
+	font-size: 0;
+	background: rgba(0, 0, 0, 0.14)
 }
+
 .password_strength_meter strong:last-child {
-    margin-bottom:0
+	margin-bottom: 0
 }
+
 .password_strength_meter.level_1 .l1 {
-    background:#b25a5e
+	background: #b25a5e
 }
+
 .password_strength_meter.level_2 .l2 {
-    background:#e0af6d
+	background: #e0af6d
 }
-.password_strength_meter.level_3 .l3,.password_strength_meter.level_4 .l4 {
-    background:#80b059
+
+.password_strength_meter.level_3 .l3,
+.password_strength_meter.level_4 .l4 {
+	background: #80b059
 }
+
 .password_strength_meter.level_5 .l5 {
-    background:#80b059;
-    box-shadow:0px 0px 6px 0px #88c62e
+	background: #80b059;
+	box-shadow: 0px 0px 6px 0px #88c62e
 }
+
+
 /* --- FIM DO TESTE --- */
