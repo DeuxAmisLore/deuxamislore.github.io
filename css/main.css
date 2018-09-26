@@ -1,3 +1,24 @@
+/* Barra de rolagem */
+/* Largura */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Cor de fundo */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Cor */
+::-webkit-scrollbar-thumb {
+    background: #0cc2aa; 
+}
+
+/* Cor mouse em cima */
+::-webkit-scrollbar-thumb:hover {
+    background: #088a79; 
+}
+
 html {
   font-size: 10px;
 }
