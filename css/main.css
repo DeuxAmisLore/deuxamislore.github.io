@@ -11,12 +11,12 @@
 
 /* Cor */
 ::-webkit-scrollbar-thumb {
-    background: #0cc2aa; 
+    background: #ffffc1; 
 }
 
 /* Cor mouse em cima */
 ::-webkit-scrollbar-thumb:hover {
-    background: #088a79; 
+    background: #ffff86; 
 }
 
 html {
